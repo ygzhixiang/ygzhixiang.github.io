@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css"/>
+    <!--必要样式-->
+    <link rel="stylesheet" type="text/css" href="css/signup.css"/>
+    <!--[if IE]>
+    <![endif]-->
+</head>
+<body class="signin">
+<div class="signinpanel">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <form class="m-t" role="form" action="index_test.html">
+                <div class="row" >
+                    <div class="col-xs-12 footer-branding">
+                        <img class="footer-branding-logo" src="img/synthetica-logo@2x.png" alt="Synthetica freebie html5 css3 template logo">
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="用户名" value="" >
+                </div>
+                <div class="form-group">
+                    <input id="upass"type="password" class="form-control" placeholder="密码" value="">
+                </div>
+
+                <div class="form-group">
+                    <input id="upass1" type="password" class="form-control" placeholder="再次输入密码" required="">
+                </div>
+                <div class="errorText" id="error_box" ><br></div>
+                <button onclick="fnRegist()" type="submit" class="btn btn-primary block full-width m-b">注 册</button>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function fnRegist() {
+        var opass = document.getElementById("upass").value;
+        var opass1 = document.getElementById("upass1").value;
+        if(opass==''){
+            document.getElementById("error_box").innerHTML="密码不能为空！";
+            return false;
+        }
+        if(opass != opass1){
+            document.getElementById("error_box").innerHTML = "两次输入密码不一致！";
+            return false;//不跳转
+        }
+    }
+</script>
+
+<div style="text-align:center;">
+</div>
+</body>
+</html>

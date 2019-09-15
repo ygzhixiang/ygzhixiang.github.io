@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登陆</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css"/>
+    <!--必要样式-->
+   <link rel="stylesheet" type="text/css" href="css/signup.css"/>
+    <!--[if IE]>
+<!-   <script src="js/html5.js"></script>-->
+    <![endif]-->
+</head>
+<body class="signin">
+<div class="signinpanel">
+    <div class="row">
+        <div class="col-sm-12">
+            <form class="m-t" role="form" action="index_test.html">
+                <div class="row" >
+                    <div class="col-xs-12 footer-branding">
+                        <img class="footer-branding-logo" src="img/synthetica-logo@2x.png" alt="Synthetica freebie html5 css3 template logo">
+                    </div>
+                </div>
+                <p class="m-t-md">欢迎登录阳关职享</p>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="用户名" required="" >
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="密码" required="">
+                </div>
+                <button onclick="fnLogin()" type="submit" class="btn btn-primary block full-width m-b">登 录</button>
+                <p class="text-muted text-center"> <a href="login.html#"><small>忘记密码了？</small></a> | <a href="sign_up.html">注册一个新账号</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script >
+function fnLogin(){
+    window.alert("登录成功");
+}
+
+</script>
+<div style="text-align:center;">
+</div>
+</body>
+</html>
