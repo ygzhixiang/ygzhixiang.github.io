@@ -9,11 +9,15 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>阳光职享</title>
+	<meta name="viewport"content="width=device-width,height=50%, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=0"/>
+	<!--width=device-width ：表示宽度是设备屏幕的宽度 initial-scale=1.0：表示初始的缩放比例 minimum-scale=0.5：表示最小的缩放比例 maximum-scale=2.0：表示最大的缩放比例  user-scalable=yes：表示用户是否可以调整缩放比例-->
+<!--	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />-->	<!--禁止手机端缩放-->
+	<title>阳光职享</title>
 <meta name="description" content="A free html template with Sketch design made with Bootstrap">
 <meta name="keywords" content="free html template, bootstrap, ui kit, sass" />
 <meta name="author" content="Codrops" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
@@ -31,11 +35,13 @@
 <link rel="manifest" href="img/favicon/manifest.json">
 <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 <link rel="shortcut icon" href="img/favicon/favicon.ico">
+
 <meta name="msapplication-TileColor" content="#66e0e5">
 <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
 <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 <!-- end favicon links -->
+
 <link rel="stylesheet" href="css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/normalize.min.css">
 <link rel="stylesheet" href="css/animate.min.css">
@@ -43,6 +49,7 @@
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/Scroll.css">
 </head>
 
 
@@ -50,6 +57,21 @@
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
+>
+<!--下面是向左滚动代码-->
+
+       <!-- <tr><td id="butong_net_left1" valign="top" align="center">
+            <table cellpadding="2" cellspacing="0" border="0">
+                <tr align="center">
+
+                    <td><img src="img/hero-bg-01.jpg"></td>
+                    <td><img src="img/hero-bg-02.jpg"></td>
+                    <td><img src="img/hero-bg-03.jpg"></td>
+                </tr>
+            </table>
+        </td>
+            <td id="butong_net_left2" valign="top"></td>
+        </tr>-->
 <div class="container-fluid">
 	<div class="row">
 		<div class="header-nav-wrapper">
@@ -74,29 +96,31 @@
 					<ul class="secondary-nav">
 						<li class="subscribe"><a  href="#connect">联系我们</a></li>
 						<!--<li class="search"><a href="#search" class="show-search"><i class="fa fa-search"></i></a></li-->>
-					</ul>
-				</div>
 				<!--<div class="search-wrapper">
 					<ul class="search">
 						<li>
 							<input type="text" id="search-input" placeholder="Start typing then hit enter to search">
 						</li>
+					</ul>
+				</div>
 						<li>
 							<a href="#" class="hide-search"><i class="fa fa-close"></i></a>
 						</li>
 					</ul>
 				</div>-->
+					</ul>
+				</div>
 			</div>
 			<div class="navicon">
 				<a class="nav-toggle" href="#"><span></span></a>
 			</div>
 		</div>
-	</div>
-</div>
-<header class="hero">
-	<div class="carousel js-flickity">
+    </div>
+    </div>
+    <header class="hero">
+	<div class="carousel js-flickity" >
 		<div class="carousel-cell" style="background-image: url(img/hero-bg-01.jpg);">
-			<div class="hero-bg">
+			<div class="hero-bg" >
 				<!--<div class="container">
 					<div class="row">
 						&lt;!&ndash;<div class="col-md-12 text-center">
@@ -172,7 +196,7 @@
 						<source src="http://sc.chinaz.com/?v/oceans.ogv" type="video/ogg" />
 						<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="" target="_blank">supports HTML5 video</a></p>
 					</video>-->
-					<img src="/img/video-cover.jpg" width="300" height="300">
+					<img src="/img/video-cover.jpg" width=100% height=auto>
 				</div>
 
 			<p>“阳光职享”的使用对象只要有三个：“逐梦人”、爱心企业及学生。“逐梦人”通过线上线下平台，获得工作讯息、就业指导、岗位培训进而获取工作，自食其力；而爱心企业可以通过线上平台直接对接大量的劳动力，招募员工；中小学以及大学生则可以通过公益教育课堂走近残障人士、参与公益活动，传播公益理念。</p>
@@ -189,7 +213,8 @@
 				<h4>企业招聘</h4>
 			</div>
 		<div class="row">
-			<div class="col-md-3 col-sm-6 col-xs-12">
+            <img src="img/招聘.PNG" width="100%" height="auto">
+			<!--<div class="col-md-3 col-sm-6 col-xs-12">
 				<article class="crew-member" style="background-image: url(img/crew-peter-finlan.jpg)">
 
 
@@ -263,7 +288,7 @@
 					</figure>
 				</article>
 			</div>
-		</div>
+		</div>-->
 		<!--<div class="row skillset">
 			<div class="col-md-6">
 				<div class="bar-chart-wrapper">
@@ -307,13 +332,13 @@
 <!-- END SECTION: Crew -->
 <!-- SECTION: Class -->
 
-<section class="latest-articles has-padding alternate-bg" id="course">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-sm-4">
-				<h4>线上教程</h4>
-			</div>
-			<div class="col-md-8 col-sm-8 sort">
+<section class="latest-articles has-padding " id="course">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<h4>线上教程</h4>
+					</div>
+			<!--<div class="col-md-8 col-sm-8 sort">
 				<h5>搜索</h5>
 				<select name="course-sort" id="inputCourse-Sort" class="">
 					<option value="">搜索相关课程</option>
@@ -321,79 +346,64 @@
 					<option value="">UI Patterns</option>
 					<option value="">Product Design</option>
 				</select>
-			</div>
+		</div>-->
 		</div>
 		<div class="row">
 			<div class="col-md-4">
 				<article class="article-post">
-					<a href="https://bilibili.com" target="_blank">
-						<div class="article-image has-overlay" style="background-image: url(img/article-01.jpg)">
-							<span class="featured-tag">Featured</span>
+
+						<div class="article-image has-overlay" style="background-image: url(https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=ps%E6%95%99%E7%A8%8B&step_word=&hs=0&pn=5&spn=0&di=219450&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&istype=0&ie=utf-8&oe=utf-8&in=&cl=2&lm=-1&st=undefined&cs=2401112030%2C1173817020&os=1670582751%2C3612773526&simid=42361691%2C748688126&adpicid=0&lpn=0&ln=1171&fr=&fmq=1569078064050_R&fm=&ic=undefined&s=undefined&hd=undefined&latest=undefined&copyright=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&ist=&jit=&cg=&bdtype=0&oriquery=&objurl=http%3A%2F%2Fs2.sinaimg.cn%2Fmw690%2F0029vChvzy75xzKOlI5b1%26690&fromurl=ippr_z2C%24qAzdH3FAzdH3Fks52_z%26e3Bftgw_z%26e3Bv54_z%26e3BvgAzdH3FfAzdH3Fks52_0clmckd1a8adx2gf_z%26e3Bip4s&gsm=0&rpstart=0&rpnum=0&islist=&querylist=&force=undefined)">
+							<!--<span class="featured-tag">Featured</span>-->
 						</div>
 						<figure>
 							<figcaption>
-								<h2>增加每天的开心</h2>
-								<p>它们居然可以像人类一般。。。建国之后不能成精哦......点击视频查看详情...</p>
+								<h2>【Photoshop 教程】</h2>
+								<p>史上最容易听懂的PS入门基础教程（更新完毕：多的是你不知道的事）<a style="color: #70f6ea" href=https://www.bilibili.com/video/av4548006?from=search&seid=13826671506878191529" target="_blank">视频详情<<</a>
+								</p>
 							</figcaption>
 						</figure>
-					</a>
-					<ul class="article-footer">
+
+					<!--<ul class="article-footer">
 						<li class="article-category">
 							<a href="#">Product</a>
 						</li>
 						<li class="article-comments">
 							<span><i class="fa fa-comments"></i> 51</span>
 						</li>
-					</ul>
+					</ul>-->
 				</article>
 			</div>
 			<div class="col-md-4">
 				<article class="article-post">
-					<a href="#">
-						<div class="article-image has-overlay" style="background-image: url(img/article-02.jpg)">
-						</div>
-						<figure>
-							<figcaption>
-								<h2>The 10 best traits of a awesome design leaders</h2>
-								<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-							</figcaption>
-						</figure>
-					</a>
-					<ul class="article-footer">
-						<li class="article-category">
-							<a href="#">Teams</a>
-						</li>
-						<li class="article-comments">
-							<span><i class="fa fa-comments"></i> 42</span>
-						</li>
-					</ul>
+					<div class="article-image has-overlay" style="background-image: url(https://image.baidu.com/search/detail?ct=503316480&z=0&tn=baiduimagedetail&ipn=d&word=c4d%E6%95%99%E7%A8%8B&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=-1&hd=&latest=&copyright=&cs=3244358750,991855135&os=4131953056,2052399217&simid=4177822498,685086615&pn=116&rn=1&di=4730&ln=1472&fr=&fmq=1569079503434_R&ic=&s=undefined&se=&sme=&tab=0&width=&height=&face=undefined&is=0,0&istype=2&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&objurl=http%3A%2F%2Fp1.qhimgs4.com%2Ft011e4752377ed126bf.jpg&rpstart=0&rpnum=0&adpicid=0&force=undefined)">
+						<!--<span class="featured-tag">Featured</span>-->
+					</div>
+					<figure>
+						<figcaption>
+							<h2>【小莫讲C4D】</h2>
+							<p>CINEMA 4D快速入门教程<a style="color: #70f6ea" href=https://www.bilibili.com/video/av4980447?from=search&seid=4772709021070385309" target="_blank">视频详情<<</a>
+							</p>
+						</figcaption>
+					</figure>
 				</article>
 			</div>
 			<div class="col-md-4">
 				<article class="article-post">
-					<a href="#">
-						<div class="article-image has-overlay" style="background-image: url(img/article-03.jpg)">
-						</div>
-						<figure>
-							<figcaption>
-								<h2>How to design well collaboratively with an agile product team</h2>
-								<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-							</figcaption>
-						</figure>
-					</a>
-					<ul class="article-footer">
-						<li class="article-category">
-							<a href="#">Teams</a>
-						</li>
-						<li class="article-comments">
-							<span><i class="fa fa-comments"></i> 58</span>
-						</li>
-					</ul>
+					<div class="article-image has-overlay" style="background-image: url(https://image.baidu.com/search/detail?ct=503316480&z=&tn=baiduimagedetail&ipn=d&word=ae%E6%95%99%E7%A8%8B&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=-1&hd=&latest=&copyright=&cs=4211368816,2091774574&os=1306577681,2687553284&simid=0,0&pn=1&rn=1&di=143000&ln=993&fr=&fmq=1569079295127_R&ic=&s=undefined&se=&sme=&tab=0&width=&height=&face=undefined&is=0,0&istype=2&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&objurl=http%3A%2F%2Fimgsa.baidu.com%2Fexp%2Fw%3D500%2Fsign%3D63a62321be7eca80120539e7a1229712%2Fa6efce1b9d16fdfa7ee643ecba8f8c5494ee7b2e.jpg&rpstart=0&rpnum=0&adpicid=0&force=undefined)">
+						<!--<span class="featured-tag">Featured</span>-->
+					</div>
+					<figure>
+						<figcaption>
+							<h2>【2018全套零基础AE教程】</h2>
+							<p>AE软件课程入门首选。<a style="color: #70f6ea" href=https://www.bilibili.com/video/av33478152?from=search&seid=13931296681083653719" target="_blank">视频详情<<</a>
+							</p>
+						</figcaption>
+					</figure>
 				</article>
 			</div>
 		</div>
-		<!--<div class="row has-top-margin">
-			<div class="col-md-4">
+		<div class="row has-top-margin">
+			<!--<div class="col-md-4">
 				<article class="article-post">
 					<a href="#">
 						<div class="article-image has-overlay" style="background-image: url(img/article-04.jpg)">
@@ -459,11 +469,11 @@
 					</ul>
 				</article>
 			</div>
-		</div>
+		</div>-->
 		<div class="row is-centered">
-			<a href="#intro" class="btn secondary view-more">View more</a>
+			<a href="#course" class="btn secondary view-more">加载更多</a>
 		</div>
-	</div>-->
+	</div>
 </section>
 
 <!-- END SECTION: Stats -->
@@ -503,15 +513,15 @@
 			<div class="col-md-4 col-sm-4">
 				<h4>成功案例</h4>
 			</div>
-			<div class="col-md-8 col-sm-8 sort">
+			<!--<div class="col-md-8 col-sm-8 sort">
 				<h5>搜索</h5>
 				<select name="article-sort" id="inputArticle-Sort" class="">
-					<option value="">搜索相关案例</option>
+					<option value="">搜索相关案例</option>]
 					<option value="">Visual Design</option>
 					<option value="">UI Patterns</option>
 					<option value="">Product Design</option>
 				</select>
-			</div>
+			</div>-->
 		</div>
 		<!--<div class="row">
 			<div class="col-md-4">
@@ -585,74 +595,50 @@
 		<div class="row has-top-margin">
 			<div class="col-md-4">
 				<article class="article-post">
-					<a href="#">
-						<div class="article-image has-overlay" style="background-image: url(img/article-04.jpg)">
-						</div>
-						<figure>
-							<figcaption>
-								<h2>The essentials of modern interaction design (mobile + tablet)</h2>
-								<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-							</figcaption>
-						</figure>
-					</a>
-					<ul class="article-footer">
-						<li class="article-category">
-							<a href="#">UX Design</a>
-						</li>
-						<li class="article-comments">
-							<span><i class="fa fa-comments"></i> 14</span>
-						</li>
-					</ul>
+					<div class="article-image has-overlay" style="background-image: url(img/article-04.jpg)">
+						<!--<span class="featured-tag">Featured</span>-->
+					</div>
+					<figure>
+						<figcaption>
+							<h2>测试数据</h2>
+							<p>测试数据...<a style="color: #70f6ea" href="https://mp.weixin.qq.com/s/_-F66B6-yTj1KXVFQwq3YA" target="_blank">查看详情<<</a>
+							</p>
+						</figcaption>
+					</figure>
 				</article>
 			</div>
 			<div class="col-md-4">
 				<article class="article-post">
-					<a href="#">
-						<div class="article-image has-overlay" style="background-image: url(img/article-05.jpg)">
-						</div>
-						<figure>
-							<figcaption>
-								<h2>Overcoming barriers encountered in the pitch process (part 1)</h2>
-								<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-							</figcaption>
-						</figure>
-					</a>
-					<ul class="article-footer">
-						<li class="article-category">
-							<a href="#">Product</a>
-						</li>
-						<li class="article-comments">
-							<span><i class="fa fa-comments"></i> 55</span>
-						</li>
-					</ul>
+					<div class="article-image has-overlay" style="background-image: url(img/article-05.jpg)">
+						<!--<span class="featured-tag">Featured</span>-->
+					</div>
+					<figure>
+						<figcaption>
+							<h2>测试数据</h2>
+							<p>测试数据...<a style="color: #70f6ea" href="https://mp.weixin.qq.com/s/_-F66B6-yTj1KXVFQwq3YA" target="_blank">查看详情<<</a>
+							</p>
+						</figcaption>
+					</figure>
 				</article>
 			</div>
 			<div class="col-md-4">
 				<article class="article-post">
-					<a href="#">
-						<div class="article-image has-overlay" style="background-image: url(img/article-06.jpg)">
-						</div>
-						<figure>
-							<figcaption>
-								<h2>10 things we've learnt about our users (Case Study)</h2>
-								<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-							</figcaption>
-						</figure>
-					</a>
-					<ul class="article-footer">
-						<li class="article-category">
-							<a href="#">UX Design</a>
-						</li>
-						<li class="article-comments">
-							<span><i class="fa fa-comments"></i> 20</span>
-						</li>
-					</ul>
+					<div class="article-image has-overlay" style="background-image: url(img/article-05.jpg)">
+						<!--<span class="featured-tag">Featured</span>-->
+					</div>
+					<figure>
+						<figcaption>
+							<h2>测试数据</h2>
+							<p>测试数据...<a style="color: #70f6ea" href="https://mp.weixin.qq.com/s/_-F66B6-yTj1KXVFQwq3YA" target="_blank">查看详情<<</a>
+							</p>
+						</figcaption>
+					</figure>
 				</article>
 			</div>
 		</div>
-		<!--<div class="row is-centered">
-			<a href="#intro" class="btn secondary view-more">View more</a>
-		</div>-->
+		<div class="row is-centered">
+			<a href="#intro" class="btn secondary view-more">加载更多</a>
+		</div>
 	</div>
 </section>
 <!-- END SECTION: Articles -->
@@ -667,11 +653,17 @@
 		<div class="row">
 			<div class="col-md-6 content-left">
 				<p style="font-weight:bold">《关于扶持残疾人自主就业创业的意见》</p><br>
-				<p>自主创业、灵活就业（以下统称自主就业创业）是残疾人实现就业的主渠道之一。为落实国家关于大力推进大众创业、万众创新和坚决打赢脱贫攻坚战的有关部署，进一步促进残疾人自主就业创业，加快推进残疾人小康进程，依据《残疾人保障法》和《残疾人就业条例》“国家鼓励扶持残疾人自主择业、自主创业”要求和《国务院关于做好当前和今后一段时期就业创业工作的意见》精神，提出如下意见……</p>
+				<p>自主创业、灵活就业（以下统称自主就业创业）是残疾人实现就业的主渠道之一。为落实国家关于大力推进大众创业、万众创新和坚决打赢脱贫攻坚战的有关部署，进一步促进残疾人自主就业创业，加快推进残疾人小康进程，依据《残疾人保障法》和《残疾人就业条例》“国家鼓励扶持残疾人自主择业、自主创业”要求和《国务院关于做好当前和今后一段时期就业创业工作的意见》精神，提出如下意见...
+					<a  class="left"href="https://mp.weixin.qq.com/s/MN6BZJsHc8QTANzWa1cFcA" target="_blank" style="color:#31b0d5">查看更多<<</a>
+				</p>
 			</div>
+
 			<div class="col-md-6 content-right">
 				<p style="font-weight:bold">《关于在脱贫攻坚中做好贫困重度残疾人照护服务工作的通知》</p><br>
-				<p>通知中提到要扎实做好贫困重度残疾人照护服务相关工作。各地要按照中央打赢脱贫攻坚战三年行动指导意见和支持深度贫困地区脱贫攻坚实施意见关于开展贫困重度残疾人照护服务的有关要求，立足现有条件，采取积极措施，扎实做好贫困重度残疾人照护服务相关工作……</p>
+				<p>通知中提到要扎实做好贫困重度残疾人照护服务相关工作。各地要按照中央打赢脱贫攻坚战三年行动指导意见和支持深度贫困地区脱贫攻坚实施意见关于开展贫困重度残疾人照护服务的有关要求，立足现有条件，采取积极措施，扎实做好贫困重度残疾人照护服务相关工作。对于符合条件且有意愿入住各类照护服务机构的贫困重度残疾人，要依托和整合现有公共服务设施为其提供集中照护服务； 对于...
+
+					<a  href="https://mp.weixin.qq.com/s/Tk-zLRWY6o4pUImMdYbpZQ" target="_blank" style="color:#31b0d5">查看更多<<</a>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -791,14 +783,21 @@
 </section>
 <!-- END SECTION: Freebies -->
 <!-- SECTION: cor -->
-<section class="cor has-padding" id="cor">
+<section class="cor has-padding alternate-bg" id="cor">
 	<div class="container ">
-	<div class="row">
-		<div class="col-md-12">
-			<h4>商业合作</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<h4>合作伙伴</h4>
+			</div>
+			<div style="text-align: center">              <!--居中-->
+			<!--<a ><img src="img/synthetica-logo.png" width="220" height="35"></a>-->
+				<!--<a href="https://mp.weixin.qq.com/s/_-F66B6-yTj1KXVFQwq3YA"><img src="img/html_code.jpg" width="100" height="100"></a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!&ndash;插入空格&ndash;&gt;-->
+				<a href="https://mp.weixin.qq.com/s/_-F66B6-yTj1KXVFQwq3YA"><img src="img/公众号二维码.PNG" width="100" height="100"></a>
+			</div>
 		</div>
 	</div>
-	</div>
+
 </section>
 <!-- END SECTION: cor -->
 <!-- SECTION: Get started -->
@@ -825,7 +824,7 @@
 		<div class="row">
 			<div class="col-xs-12 footer-nav">
 				<ul class="footer-primary-nav">
-					<li><a href="signup.html">登录/注册</a></li>
+					<li><a href="sign_up.html">登录/注册</a></li>
 					<li ><a href="#intro">公司简介</a></li>
 					<li ><a href="#team" >企业招聘</a></li>
 					<li><a href="#course">线上课程</a></li>
@@ -870,6 +869,8 @@ window.jQuery || document.write('<script src="js/min/jquery-1.11.2.min.js"><\/sc
 <script src="js/min/jquery.waypoints.min.js"></script>
 <script src="js/min/flickity.pkgd.min.js"></script>
 <script src="js/min/scripts-min.js"></script>
+
+<script src="js/Scroll.js"></script>
 
 </body>
 
