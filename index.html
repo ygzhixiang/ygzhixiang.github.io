@@ -11,7 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!--	<meta name="viewport" content="width=device-width,height=50%, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=0;"/>-->
 	<!--width=device-width ：表示宽度是设备屏幕的宽度 initial-scale=1.0：表示初始的缩放比例 minimum-scale=0.5：表示最小的缩放比例 maximum-scale=2.0：表示最大的缩放比例  user-scalable=yes：表示用户是否可以调整缩放比例-->
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />	<!--禁止手机端缩放-->
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" name="viewport" />	<!--禁止手机端缩放-->
 	<title>阳光职享</title>
 <meta name="description" content="A free html template with Sketch design made with Bootstrap">
 <meta name="keywords" content="free html template, bootstrap, ui kit, sass" />
@@ -118,7 +118,7 @@
     </div>
     </div>
     <header class="hero">
-	<div class="carousel js-flickity" >
+	<div class="carousel js-flickity" style="width: 100%;height:auto">
 		<div class="carousel-cell" style="background-image: url(img/hero-bg-01.jpg);">
 			<div class="hero-bg" >
 				<!--<div class="container">
@@ -208,12 +208,12 @@
 <!-- SECTION: Crew -->
 <section class="crew has-padding alternate-bg" id="team">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h4>企业招聘</h4>
-			</div>
-		<div class="row" style="text-align: center">
-            <img src="img/招聘.PNG" width=100% height=auto >
+			<div class="row">
+				<div class="col-md-12">
+					<h4>企业招聘</h4>
+				</div>
+
+            <!--<img src="img/招聘.PNG" width=100% height=auto >-->
 			<!--<div class="col-md-3 col-sm-6 col-xs-12">
 				<article class="crew-member" style="background-image: url(img/crew-peter-finlan.jpg)">
 
